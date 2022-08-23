@@ -4,7 +4,7 @@ import { ITag } from "models/ITag"
 
 export const tagAPI = createApi({
     reducerPath: 'tagAPI',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000' }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000' }),
     tagTypes: ['Tag'],
     endpoints: (build) => ({
         fetchAllTags: build.query<ITag[], any>({

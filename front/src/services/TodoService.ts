@@ -4,7 +4,7 @@ import { ITodo } from "../models/ITodo"
 
 export const todoAPI = createApi({
     reducerPath: 'todoAPI',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000' }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000' }),
     tagTypes: ['Todo'],
     endpoints: (build) => ({
         fetchAllTodos: build.query<ITodo[], any>({
