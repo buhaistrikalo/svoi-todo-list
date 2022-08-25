@@ -1,15 +1,12 @@
-import React from 'react'
-import Router from './routes'
-import './App.css'
-import ThemeConfig from './theme';
+import React from 'react';
+import './App.css';
 
-
-const App = () => {
-	return (
-		<ThemeConfig>
-			<Router />
-		</ThemeConfig>
-	)
+function App() {
+  return (
+    <div className="App">
+     
+    </div>
+  );
 }
 
-export default App
+export default App;
