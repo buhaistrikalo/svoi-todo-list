@@ -1,12 +1,17 @@
 import React from 'react';
-import './App.css';
+import Router from 'router';
+import { ThemeProvider } from 'styled-components';
+import { darkTheme, GlobalStyle } from 'theme';
 
 function App() {
-  return (
-    <div className="App">
-     
-    </div>
-  );
+    return (
+        <>
+            <ThemeProvider theme={darkTheme}>
+                <Router />
+                <GlobalStyle />
+            </ThemeProvider>
+        </>
+    );
 }
 
 export default App;
