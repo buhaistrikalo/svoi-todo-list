@@ -3,19 +3,16 @@ import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
 import { Layout } from 'layout';
 
-const Page = styled.div`
-`
-
-const Sidebar = styled.div``;
+const Container = styled.div`
+    
+`;
 
 const DefaultLayout: React.FC<Layout> = ({ children }) => {
     return (
-        <div>
+        <Container>
             {children}
-            <Page>
-                <Outlet />
-            </Page>
-        </div>
+            <Outlet />
+        </Container>
     );
 };
 

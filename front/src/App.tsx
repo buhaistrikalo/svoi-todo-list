@@ -1,7 +1,7 @@
 import React from 'react';
 import Router from 'router';
 import { ThemeProvider } from 'styled-components';
-import { darkTheme, GlobalStyle } from 'theme';
+import { darkTheme, GlobalStyle, lightTheme } from 'theme';
 
 function App() {
     return (
