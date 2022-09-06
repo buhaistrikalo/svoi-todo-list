@@ -1,9 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
-import { Icon } from '@iconify/react';
 
-import { COLORS } from 'theme/colors';
-import Illustration from './../components/Illustration';
+import Illustration from 'components/Illustration';
+import { Button } from 'components/ui';
 
 const Container = styled.div`
     display: flex;
@@ -36,25 +34,6 @@ const Subtitle = styled.span`
     color: ${(props) => props.theme.primaryText};
 
     margin-bottom: 100px;
-`;
-
-const Button = styled.button`
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: ${(props) => props.theme.button.color};
-    background: ${(props) => props.theme.button.background};
-    border: 0;
-    border-radius: 20px;
-
-    cursor: pointer;
-
-    padding: 10px;
-
-    transition: background 0.5s;
-    :hover {
-        background: ${(props) => props.theme.button.hover};
-    }
 `;
 
 const LogoContainer = styled.div`
