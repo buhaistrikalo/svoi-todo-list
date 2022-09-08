@@ -15,6 +15,8 @@ const Content = styled.div`
 
     max-width: 330px;
     padding: 0 60px;
+
+    
 `;
 
 const Title = styled.h1`
@@ -25,19 +27,30 @@ const Title = styled.h1`
 
     margin: 0;
     margin-bottom: 16px;
+    
+    text-align: center;
+
+    @media (min-width: 768px) {
+        text-align: start;
+    }
 `;
 
 const Subtitle = styled.span`
+    display: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: ${(props) => props.theme.primaryText};
 
     margin-bottom: 100px;
+
+    @media (min-width: 768px) {
+        display: block;
+    }
 `;
 
 const LogoContainer = styled.div`
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
@@ -53,6 +66,10 @@ const LogoContainer = styled.div`
         opacity: 0.08;
         z-index: -1;
         background-color: ${(props) => props.theme.backgroundLogo};
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
     }
 `;
 
