@@ -6,7 +6,7 @@ import { darkTheme, GlobalStyle, lightTheme } from 'theme';
 function App() {
     return (
         <>
-            <ThemeProvider theme={darkTheme}>
+            <ThemeProvider theme={darkTheme} >
                 <Router />
                 <GlobalStyle />
             </ThemeProvider>
